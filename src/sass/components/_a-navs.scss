@@ -6,31 +6,39 @@
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-
   .a-grid-nav__row {
     display: table-row;
     .a-grid-nav__item {
-      border-right: 1px solid #ebedf2;
-      border-bottom: 1px solid #ebedf2;
+      border-right: 1px solid $shadow-white;
+      border-bottom: 1px solid $shadow-white;
       display: table-cell;
       vertical-align: middle;
       text-align: center;
       padding: 3.3rem 0.75rem;
       -webkit-transition: all 0.3s;
       transition: all 0.3s;
+      text-decoration: none;
+      color: $shadowlol;
       .a-grid-nav__icon {
-        color: #2c77f4;
+        color: $link-blue;
         text-align: center;
         font-size: 2.5rem;
+        > svg {
+          width: 40px;
+          height: 40px;
+          > g [fill] {
+            fill: $link-blue;
+          }
+        }
       }
       .a-grid-nav__title {
-        color: #2c77f4;
+        color: $link-blue;
         display: block;
         line-height: 1;
         text-align: center;
         margin: 10px 0 0 0;
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 600;
       }
       .a-grid-nav__desc {
         display: block;
@@ -60,7 +68,7 @@
     border: 0;
     .a-nav__item {
         display: block;
-        > .a-navn__link {
+        > .a-nav__link {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -77,15 +85,16 @@
             font-size: 1rem;
             color: #595d6e;
             font-weight: 400;
+            text-decoration: none;
         }
         &:not(.a-nav__item--disabled):hover {
             background-color: #f7f8fa;
             -webkit-transition: all 0.3s;
             transition: all 0.3s;
-            color: #2c77f4;
+            color: $link-blue;
         }
     }
-    .a-nav__header, .a-nav__footer {
+    .a-nav__heading, .a-nav__footer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -97,16 +106,16 @@
         align-items: center;
         font-size: 1rem;
         color: #595d6e;
-        font-weight: 500;
+        font-weight: 600;
         padding: 0.55rem 1.75rem;
     }
-    .a-nav__header {
+    .a-nav__heading {
         font-size: 1.1rem;
     }
-    .a-nav__seperator {
+    .a-nav__separator {
         margin: 0.7rem 0;
         height: 0;
         display: block;
-        border-bottom: 1px solid #ebedf2;
+        border-bottom: 1px solid $shadow-white;
     }
 }

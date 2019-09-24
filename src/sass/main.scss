@@ -1,2 +1,10 @@
-@import 'components/_a-item';
-@import 'components/_a-navs';
+// Normalize import
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+// Source Sans import
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+
+// Asta framework import
+@import './utilities/_variables';
+@import 'theme/themes';
+@import './components/_a-item';
+@import './components/_a-navs';

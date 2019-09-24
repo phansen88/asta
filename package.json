@@ -1,0 +1,26 @@
+{
+  "name": "asta",
+  "version": "0.0.2",
+  "description": "Normalize.css is a project by [Nicolas Gallagher](https://github.com/necolas),\r co-created with [Jonathan Neal](https://github.com/jonathantneal).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phansen88/asta.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phansen88/asta/issues"
+  },
+  "homepage": "https://github.com/phansen88/asta#readme",
+  "devDependencies": {
+    "sass": "^1.22.12"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "normalize-scss": "^7.0.1"
+  }
+}
