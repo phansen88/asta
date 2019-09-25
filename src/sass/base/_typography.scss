@@ -16,3 +16,27 @@ h5 {
 h6 {
     font-size: 1rem;
 }
+.a-light {
+    font-weight: 300;
+}
+.a-bold {
+    font-weight: 600;
+}
+.a-primary {
+    color: $a-primary;
+}
+.a-danger {
+    color: $a-danger;
+}
+.a-warning {
+    color: $a-warning;
+}
+.a-success {
+    color: $a-success;
+}
+.a-brand {
+    color: $a-brand;
+}
+.a-dark {
+    color: $a-dark;
+}

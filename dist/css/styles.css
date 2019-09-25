@@ -450,6 +450,7 @@ template {
   display: none;
 }
 
+/* Default Colors */
 h1 {
   font-size: 2.5rem;
 }
@@ -472,6 +473,38 @@ h5 {
 
 h6 {
   font-size: 1rem;
+}
+
+.a-light {
+  font-weight: 300;
+}
+
+.a-bold {
+  font-weight: 600;
+}
+
+.a-primary {
+  color: #4153de;
+}
+
+.a-danger {
+  color: #da0b28;
+}
+
+.a-warning {
+  color: #f7b01b;
+}
+
+.a-success {
+  color: #12af78;
+}
+
+.a-brand {
+  color: #2c74f4;
+}
+
+.a-dark {
+  color: #101119;
 }
 
 body {
