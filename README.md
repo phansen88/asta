@@ -7,6 +7,7 @@
 ## Prerequisites
 1. [Install Node.JS](https://nodejs.org/en/) a JavaScript runtime built on Chrome's V8 JavaScript engine. It comes with NPM which is a software Package Manager and Installer. NPM is thus used to manage Dependencies and to install Components, usually, in NodeJS projects.
 2. [Install Sass globally](https://www.npmjs.com/package/sass) This package is a distribution of Dart Sass, compiled to pure JavaScript with no native code or external dependencies. It provides a command-line sass executable and a Node.js API. Install in cmd or terminal `npm install -g sass`.
+3. [Install webpack-cli globally](https://www.npmjs.com/package/webpack-cli) webpack CLI provides a flexible set of commands for developers to increase speed when setting up a custom webpack project.
 
 ## How to use it
 1. Clone the repo in terminal or cmd `git clone https://github.com/phansen88/asta.git`.
