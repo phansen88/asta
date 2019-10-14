@@ -766,4 +766,54 @@ body {
   border-bottom: 0;
 }
 
+.a-pager-nav {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  margin: 0;
+  padding: 0;
+}
+.a-pager-nav > li {
+  padding: 0;
+  margin-right: 3px;
+  display: inline-block;
+}
+.a-pager-nav > li:last-child {
+  margin-right: 0;
+}
+.a-pager-nav > li > .pager-link {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 1.03125rem;
+  min-width: 1.03125rem;
+  padding: 0.40625rem;
+  border-radius: 3px;
+  border-radius: 0;
+  position: relative;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+.a-pager-nav > li > .pager-link.link--previous, .a-pager-nav > li > .pager-link.link--next {
+  color: #93a2dd;
+  background: #f0f3ff;
+}
+.a-pager-nav > li > .pager-link.link--disabled {
+  color: #ebedf2;
+  background: #2c77f4;
+  opacity: 0.3;
+}
+.a-pager-nav > li > .pager-link.link--active {
+  background: #2c77f4;
+  color: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */
