@@ -464,6 +464,144 @@ h6 {
 body {
   font-family: 'Source Sans Pro', sans-serif; }
 
+.a-accordion {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #ebedf2; }
+  .a-accordion .a-accordion__heading {
+    cursor: pointer;
+    border-bottom: 0;
+    background-color: #f7f8fa;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 1rem;
+    color: #2c77f4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .a-accordion .a-accordion__body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    color: #636a91; }
+    .a-accordion .a-accordion__body:not(.visible).invisible {
+      display: none; }
+  .a-accordion.a-accordion-light {
+    border: 0;
+    border-top: 1px solid #eeeef4;
+    margin: 0; }
+    .a-accordion.a-accordion-light .a-accordion__heading {
+      cursor: pointer;
+      padding: 1rem 1rem 1rem 0;
+      margin: 0;
+      background-color: transparent;
+      border: 0; }
+    .a-accordion.a-accordion-light .a-accordion__body {
+      padding: 0;
+      margin-bottom: 1.25rem; }
+    .a-accordion.a-accordion-light:first-child {
+      border-top: 0; }
+    .a-accordion.a-accordion-light:last-child {
+      margin-bottom: 1.25rem; }
+  .a-accordion.a-accordion-solid {
+    margin-bottom: 1.5rem;
+    border: 0; }
+    .a-accordion.a-accordion-solid .a-accordion__body {
+      border: 1px solid #f7f8fa; }
+  .a-accordion:first-of-type {
+    border-bottom: 0; }
+  .a-accordion:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 0; }
+
+.a-badge {
+  padding: 0;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  font-size: 0.65rem; }
+  .a-badge.a-badge--pill {
+    border-radius: 2rem; }
+  .a-badge.a-badge--inline {
+    height: 0;
+    width: auto;
+    padding: 0.609rem 0.609rem; }
+  .a-badge.a-badge--rounded {
+    border-radius: 0; }
+  .a-badge.a-badge-primary {
+    background: #4153de;
+    color: #fff; }
+    .a-badge.a-badge-primary.a-badge--outline {
+      background: transparent;
+      color: #4153de;
+      border: 1px solid #4153de; }
+  .a-badge.a-badge-danger {
+    background: #da0b28;
+    color: #fff; }
+    .a-badge.a-badge-danger.a-badge--outline {
+      background: transparent;
+      color: #da0b28;
+      border: 1px solid #da0b28; }
+  .a-badge.a-badge-warning {
+    background: #f7b01b;
+    color: #101119; }
+    .a-badge.a-badge-warning.a-badge--outline {
+      background: transparent;
+      color: #f7b01b;
+      border: 1px solid #f7b01b; }
+  .a-badge.a-badge-success {
+    background: #12af78;
+    color: #fff; }
+    .a-badge.a-badge-success.a-badge--outline {
+      background: transparent;
+      color: #12af78;
+      border: 1px solid #12af78; }
+  .a-badge.a-badge-brand {
+    background: #2c74f4;
+    color: #fff; }
+    .a-badge.a-badge-brand.a-badge--outline {
+      background: transparent;
+      color: #2c74f4;
+      border: 1px solid #2c74f4; }
+  .a-badge.a-badge-dark {
+    background: #101119;
+    color: #fff; }
+    .a-badge.a-badge-dark.a-badge--outline {
+      background: transparent;
+      color: #101119;
+      border: 1px solid #101119; }
+  .a-badge.a-badge--outline-2x {
+    border-width: 2px !important; }
+
 .a-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,75 +752,6 @@ body {
     height: 0;
     display: block;
     border-bottom: 1px solid #ebedf2; }
-
-.a-accordion {
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid #ebedf2; }
-  .a-accordion .a-accordion__heading {
-    cursor: pointer;
-    border-bottom: 0;
-    background-color: #f7f8fa;
-    margin: 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 1rem 1rem;
-    color: #2c77f4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .a-accordion .a-accordion__body {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-    color: #636a91; }
-    .a-accordion .a-accordion__body:not(.visible).invisible {
-      display: none; }
-  .a-accordion.a-accordion-light {
-    border: 0;
-    border-top: 1px solid #eeeef4;
-    margin: 0; }
-    .a-accordion.a-accordion-light .a-accordion__heading {
-      cursor: pointer;
-      padding: 1rem 1rem 1rem 0;
-      margin: 0;
-      background-color: transparent;
-      border: 0; }
-    .a-accordion.a-accordion-light .a-accordion__body {
-      padding: 0;
-      margin-bottom: 1.25rem; }
-    .a-accordion.a-accordion-light:first-child {
-      border-top: 0; }
-    .a-accordion.a-accordion-light:last-child {
-      margin-bottom: 1.25rem; }
-  .a-accordion.a-accordion-solid {
-    margin-bottom: 1.5rem;
-    border: 0; }
-    .a-accordion.a-accordion-solid .a-accordion__body {
-      border: 1px solid #f7f8fa; }
-  .a-accordion:first-of-type {
-    border-bottom: 0; }
-  .a-accordion:not(:first-of-type):not(:last-of-type) {
-    border-bottom: 0; }
 
 .a-pager-nav {
   display: flex;

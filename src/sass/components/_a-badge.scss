@@ -1,0 +1,85 @@
+.a-badge {
+    padding: 0;
+    margin: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    font-size: 0.65rem;
+    &.a-badge--pill {
+        border-radius: 2rem;
+    }
+    &.a-badge--inline {
+        height: 0;
+        width: auto;
+        padding: 0.609rem 0.609rem;
+    }
+    &.a-badge--rounded {
+        border-radius: 0;
+    }
+    &.a-badge-primary {
+        background: $a-primary;
+        color: $white;
+        &.a-badge--outline {
+            background: transparent;
+            color: $a-primary;
+            border: 1px solid $a-primary;
+        }
+    }
+    &.a-badge-danger {
+        background: $a-danger;
+        color: $white;
+        &.a-badge--outline {
+            background: transparent;
+            color: $a-danger;
+            border: 1px solid $a-danger;
+        }
+    }
+    &.a-badge-warning {
+        background: $a-warning;
+        color: $a-dark;
+        &.a-badge--outline {
+            background: transparent;
+            color: $a-warning;
+            border: 1px solid $a-warning;
+        }
+    }
+    &.a-badge-success {
+        background: $a-success;
+        color: $white;
+        &.a-badge--outline {
+            background: transparent;
+            color: $a-success;
+            border: 1px solid $a-success;
+        }
+    }
+    &.a-badge-brand {
+        background: $a-brand;
+        color: $white;
+        &.a-badge--outline {
+            background: transparent;
+            color: $a-brand;
+            border: 1px solid $a-brand;
+        }
+    }
+    &.a-badge-dark {
+        background: $a-dark;
+        color: $white;
+        &.a-badge--outline {
+            background: transparent;
+            color: $a-dark;
+            border: 1px solid $a-dark;
+        }
+    }
+    &.a-badge--outline-2x {
+        border-width: 2px !important;
+    }
+}
