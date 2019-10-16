@@ -1,0 +1,105 @@
+.a-callout {
+    padding: 1.22rem;
+    &.a-callout--diagonal-bg {
+        overflow: hidden;
+        position: relative;
+        background-color: $white;
+        &:before {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $shadow-white;
+            z-index: 1;
+        }
+        &:after {
+            content: ' ';
+            width: 200%;
+            height: 1000px;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 45%;
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+            background-color: $white;
+        }
+        .a-callout__body {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .a-callout__body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        .a-callout__content {
+            -webkit-box-flex: 2;
+            -ms-flex: 2;
+            flex: 2;
+            h3 {
+                font-size: 1.85rem;
+                font-weight: 600;
+                color: $shadowlol;
+                margin-bottom: 1rem;
+                margin-top: 1.4rem;
+            }
+            .a-callout__desc {
+                font-size: 1rem;
+                line-height: 1.8rem;
+                color: $shadowlol;
+                padding-right: 1.5rem;
+                font-weight: 400;
+                margin-top: 0;
+            }
+        }
+        .a-callout__action {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            .a-callout--button {
+                display: inline-block;
+                padding: 1rem 1.3rem;
+                font-size: 0.9rem;
+                font-weight: 600;
+                background-color: #5578eb;
+                border-color: #5578eb;
+                color: #ffffff;
+                outline: none !important;
+                vertical-align: middle;
+                text-align: center;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                line-height: 1.5;
+                border-radius: 0;
+                border: 1px solid transparent;
+                text-decoration: none;
+                -webkit-transition: all 0.15s ease-in-out;
+                transition: all 0.15s ease-in-out;
+                &:hover, :active {
+                    background-color: darken(#5578eb, 10%);
+                }
+            }
+        }
+    }
+}
