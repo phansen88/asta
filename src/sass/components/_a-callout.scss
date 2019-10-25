@@ -3,7 +3,7 @@
     &.a-callout--diagonal-bg {
         overflow: hidden;
         position: relative;
-        background-color: $white;
+        background-color: $white-color;
         &:before {
             content: ' ';
             position: absolute;
@@ -11,7 +11,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: $shadow-white;
+            background-color: $shadow-white-color;
             z-index: 1;
         }
         &:after {
@@ -24,7 +24,7 @@
             left: 45%;
             -webkit-transform: rotate(20deg);
             transform: rotate(20deg);
-            background-color: $white;
+            background-color: $white-color;
         }
         .a-callout__body {
             position: relative;
@@ -45,14 +45,14 @@
             h3 {
                 font-size: 1.85rem;
                 font-weight: 600;
-                color: $shadowlol;
+                color: $shadow-color;
                 margin-bottom: 1rem;
                 margin-top: 1.4rem;
             }
             .a-callout__desc {
                 font-size: 1rem;
                 line-height: 1.8rem;
-                color: $shadowlol;
+                color: $shadow-color;
                 padding-right: 1.5rem;
                 font-weight: 400;
                 margin-top: 0;

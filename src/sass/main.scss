@@ -1,17 +1,29 @@
-// Normalize import
-@import "../../node_modules/normalize-scss/sass/normalize/import-now";
 // Source Sans import
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
 
-@import 'vendors/line-awesome/css/line-awesome.min.css';
-
 // Asta framework import
+
+// Utilities
 @import 'utilities/variables';
+
+// Base
 @import 'base/typography';
-@import 'theme/themes';
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
+// Components
 @import 'components/a-accordion';
 @import 'components/a-badge';
 @import 'components/a-callout';
 @import 'components/a-item';
 @import 'components/a-navs';
 @import 'components/a-pagination';
+
+// Layout
+@import 'layout/a-aside';
+@import 'layout/a-wrapper';
+
+// Themes
+@import 'theme/themes';
+
+// Vendors
+@import 'vendors/line-awesome/css/line-awesome.min.css';

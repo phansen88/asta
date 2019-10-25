@@ -36,13 +36,13 @@
                 background: #f0f3ff;
             }
             &.link--disabled {
-                color: $shadow-white;
-                background: $link-blue;
+                color: $shadow-white-color;
+                background: $link-color;
                 opacity: 0.3;
             }
             &.link--active {
-                background: $link-blue;
-                color: $white;
+                background: $link-color;
+                color: $white-color;
             }
         }
     }

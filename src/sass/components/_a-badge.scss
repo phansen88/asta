@@ -27,7 +27,7 @@
     }
     &.a-badge-primary {
         background: $a-primary;
-        color: $white;
+        color: $white-color;
         &.a-badge--outline {
             background: transparent;
             color: $a-primary;
@@ -36,7 +36,7 @@
     }
     &.a-badge-danger {
         background: $a-danger;
-        color: $white;
+        color: $white-color;
         &.a-badge--outline {
             background: transparent;
             color: $a-danger;
@@ -54,7 +54,7 @@
     }
     &.a-badge-success {
         background: $a-success;
-        color: $white;
+        color: $white-color;
         &.a-badge--outline {
             background: transparent;
             color: $a-success;
@@ -63,7 +63,7 @@
     }
     &.a-badge-brand {
         background: $a-brand;
-        color: $white;
+        color: $white-color;
         &.a-badge--outline {
             background: transparent;
             color: $a-brand;
@@ -72,7 +72,7 @@
     }
     &.a-badge-dark {
         background: $a-dark;
-        color: $white;
+        color: $white-color;
         &.a-badge--outline {
             background: transparent;
             color: $a-dark;

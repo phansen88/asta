@@ -12,9 +12,9 @@
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: $white;
+    background-color: $white-color;
     background-clip: border-box;
-    border: 1px solid $shadow-white;
+    border: 1px solid $shadow-white-color;
     .a-accordion__heading {
         cursor: pointer;
         border-bottom: 0;
@@ -23,7 +23,7 @@
         font-size: 1.1rem;
         font-weight: 600;
         padding: 1rem 1rem;
-        color: $link-blue;
+        color: $link-color;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
