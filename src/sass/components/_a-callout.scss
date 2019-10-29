@@ -22,7 +22,6 @@
             z-index: 1;
             top: 0;
             left: 45%;
-            -webkit-transform: rotate(20deg);
             transform: rotate(20deg);
             background-color: $white-color;
         }
@@ -32,15 +31,9 @@
         }
     }
     .a-callout__body {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
         .a-callout__content {
-            -webkit-box-flex: 2;
-            -ms-flex: 2;
             flex: 2;
             h3 {
                 font-size: 1.85rem;
@@ -59,21 +52,10 @@
             }
         }
         .a-callout__action {
-            -webkit-box-flex: 1;
-            -ms-flex: 1;
             flex: 1;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
             flex-direction: column;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
             align-items: flex-end;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
             justify-content: center;
             .a-callout--button {
                 display: inline-block;
@@ -86,15 +68,11 @@
                 outline: none !important;
                 vertical-align: middle;
                 text-align: center;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
                 user-select: none;
                 line-height: 1.5;
                 border-radius: 0;
                 border: 1px solid transparent;
                 text-decoration: none;
-                -webkit-transition: all 0.15s ease-in-out;
                 transition: all 0.15s ease-in-out;
                 &:hover, :active {
                     background-color: darken(#5578eb, 10%);

@@ -17,30 +17,55 @@
 
         <div class="a-aside__brand">
             <div class="a-aside__brand-logo">
-                Logo goes here
+                <img src="dist/img/asta.png" />
             </div>
         </div>
 
         <div class="a-side__menu">
 
             <ul class="a-aside__menu-nav">
-                <li class="a-menu__section">Kategorier</li>
+                <li class="a-menu__section">Quickbar</li>
                 <li class="a-menu__item">
                     <a class="a-menu__link">
-                        <i class="la la-cog a-menu__link-icon"></i>
-                        <span class="a-menu__link-text">Item 1</span>
-                        <i class="la la-angle-right a-menu__link-toggle"></i>
+                        <i class="la la-backward a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Previous item</span>
                     </a>
                 </li>
                 <li class="a-menu__item">
                         <a class="a-menu__link">
-                            <i class="la la-heartbeat a-menu__link-icon"></i>
-                            <span class="a-menu__link-text">Item 2</span>
-                            <i class="la la-angle-right a-menu__link-toggle"></i>
+                            <i class="la la-forward a-menu__link-icon"></i>
+                            <span class="a-menu__link-text">Next item</span>
                         </a>
                 </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link">
+                        <i class="la la-stop a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">End meeting item</span>
+                    </a>
+                </li>
 
-                <li class="a-menu__section">En anden sektion</li>
+                <li class="a-menu__section">Navigation</li>
+
+                <li class="a-menu__item">
+                    <a class="a-menu__link">
+                        <i class="la la-home a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Home</span>
+                    </a>
+                </li>
+
+                <li class="a-menu__item">
+                    <a class="a-menu__link">
+                        <i class="la la-cog a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Settings</span>
+                        <i class="la la-angle-right a-menu__link-toggle"></i>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link">
+                        <i class="la la-sign-out a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Logout</span>
+                    </a>
+                </li>
             </ul>
 
         </div>
@@ -49,10 +74,22 @@
 
     <div class="a-wrapper">
         <div class="a-header a-aheader-fixed a-aheader-aside-included">
-            Header links
+            <div class="a-header-menu">
+                <ul class="a-header-menu__nav">
+                    <li class="a-menu__item a-menu__item--active"><a href="javascript:void(0)">Home</a></li>
+                    <li class="a-menu__item"><a href="javascript:void(0)">Other</a></li>
+                    <li class="a-menu__item"><a href="javascript:void(0)">Final</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="a-content">
-            <h1>Hello world!</h1>
+        <div class="a-content" style="height: 4000px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <h1>Hello world!</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

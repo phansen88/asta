@@ -8,7 +8,7 @@
 
 // Base
 @import 'base/typography';
-@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "~normalize-scss/sass/normalize/import-now";
 
 // Components
 @import 'components/a-accordion';
@@ -26,4 +26,5 @@
 @import 'theme/themes';
 
 // Vendors
+@import 'vendors/bootstrap/scss/import';
 @import 'vendors/line-awesome/css/line-awesome.min.css';
