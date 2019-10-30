@@ -18,7 +18,7 @@
         font-size: 1.1rem;
         font-weight: 600;
         padding: 1rem 1rem;
-        color: $link-color;
+        color: darken($a-menu-link, 5%);
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -26,7 +26,8 @@
     .a-accordion__body {
         flex: 1 1 auto;
         padding: 1.25rem;
-        color: #636a91;
+        color: $a-menu-link;
+        font-size: 0.84375rem;
         &:not(.visible).invisible {
             display: none;
         }       
