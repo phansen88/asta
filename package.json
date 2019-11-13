@@ -4,8 +4,8 @@
   "description": "Normalize.css is a project by [Nicolas Gallagher](https://github.com/necolas),\r co-created with [Jonathan Neal](https://github.com/jonathantneal).",
   "private": true,
   "browserslist": [
-    "> 1%",
-    "last 4 versions"
+    "> 0.5%",
+    "last 3 versions"
   ],
   "scripts": {
     "build": "webpack --config webpack.config.js",

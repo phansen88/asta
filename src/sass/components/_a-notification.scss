@@ -1,0 +1,36 @@
+.a-notification {
+    .a-notification__item {
+        display: flex;
+        align-items: center;
+        padding: 1.4rem 1.6rem;
+        border-bottom: 1px solid $shadow-white-color;
+        transition: background-color .3s ease;
+        .a-notification__item-icon {
+            display: flex;
+            flex: 0 0 2.5rem;
+            align-items: center;
+            i {
+                font-size: 1.4rem;
+            }
+        }
+        .a-notification__item-details {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            .a-notification__item-title {
+                transition: color .3s ease;
+                font-size: 1.2rem;
+                color: $shadow-color;
+            }
+            .a-notification__item-time {
+                font-size: 1rem;
+                color: lighten($shadow-color, 5%);
+            }
+        }
+    }
+    &.a-notification--slim {
+        .a-notification__item {
+            padding: 0.65rem 0;
+        }
+    }
+}
