@@ -823,7 +823,9 @@ template {
   border-bottom: 1px solid #ebedf2;
   -webkit-transition: background-color .3s ease;
   -o-transition: background-color .3s ease;
-  transition: background-color .3s ease; }
+  transition: background-color .3s ease;
+  text-decoration: none;
+  cursor: pointer; }
   .a-notification .a-notification__item .a-notification__item-icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -851,13 +853,35 @@ template {
       -webkit-transition: color .3s ease;
       -o-transition: color .3s ease;
       transition: color .3s ease;
-      font-size: 1.2rem;
+      font-size: 0.975rem;
       color: #888ca2; }
     .a-notification .a-notification__item .a-notification__item-details .a-notification__item-time {
-      font-size: 1rem; }
+      font-size: 0.825rem;
+      color: #a5a8b8; }
+  .a-notification .a-notification__item .a-notification-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20px;
+            flex: 0 0 20px;
+    font-size: .7rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #888ca2; }
+  .a-notification .a-notification__item:hover {
+    -webkit-transition: background-color .3s ease;
+    -o-transition: background-color .3s ease;
+    transition: background-color .3s ease;
+    background-color: #f9f9fc; }
+  .a-notification .a-notification__item:last-child {
+    border-bottom: none; }
 
 .a-notification.a-notification--slim .a-notification__item {
-  padding: 0.65rem 0; }
+  padding: 0.45rem 0 0.45rem; }
+  .a-notification.a-notification--slim .a-notification__item:hover {
+    background-color: transparent; }
 
 .a-pager-nav {
   display: -webkit-box;
@@ -1083,6 +1107,8 @@ template {
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.3px; }
+        .a-aside .a-side__menu .a-aside__menu-nav > .a-menu__section:first-child {
+          margin-top: 0; }
       .a-aside .a-side__menu .a-aside__menu-nav > .a-menu__submenu {
         display: none;
         float: none;

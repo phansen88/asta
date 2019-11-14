@@ -88,6 +88,9 @@
                 font-weight: 400;
                 text-transform: uppercase;
                 letter-spacing: 0.3px;
+                &:first-child {
+                    margin-top:0;
+                }
             }
             > .a-menu__submenu {
                 display: none;

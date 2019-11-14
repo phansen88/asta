@@ -5,6 +5,8 @@
         padding: 1.4rem 1.6rem;
         border-bottom: 1px solid $shadow-white-color;
         transition: background-color .3s ease;
+        text-decoration: none;
+        cursor: pointer;
         .a-notification__item-icon {
             display: flex;
             flex: 0 0 2.5rem;
@@ -19,18 +21,35 @@
             flex-grow: 1;
             .a-notification__item-title {
                 transition: color .3s ease;
-                font-size: 1.2rem;
+                font-size: 0.975rem;
                 color: $shadow-color;
             }
             .a-notification__item-time {
-                font-size: 1rem;
-                color: lighten($shadow-color, 5%);
+                font-size: 0.825rem;
+                color: lighten($shadow-color, 10%);
             }
+        }
+        .a-notification-toggle {
+            display: flex;
+            flex: 0 0 20px;
+            font-size: .7rem;
+            align-items: center;
+            color: $shadow-color;
+        }
+        &:hover {
+            transition: background-color .3s ease;
+            background-color: lighten($background-color, 2%);
+        }
+        &:last-child {
+            border-bottom: none;
         }
     }
     &.a-notification--slim {
         .a-notification__item {
-            padding: 0.65rem 0;
+            padding: 0.45rem 0 0.45rem;
+            &:hover {
+                background-color: transparent;
+            }
         }
     }
 }

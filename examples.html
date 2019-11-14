@@ -12,9 +12,119 @@
 </head>
 
 <body>
+    <div class="a-aside">
+
+        <div class="a-aside__brand">
+            <div class="a-aside__brand-logo">
+                <img src="dist/img/asta.png" />
+            </div>
+        </div>
+    
+        <div class="a-side__menu">
+
+            <ul class="a-aside__menu-nav">
+                <li class="a-menu__section">Navigation</li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('navs')">
+                            <i class="la la-link a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Navs</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('accordion')">
+                        <i class="la la-compress a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Accordions</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('pagination')">
+                        <i class="la la-ellipsis-h a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Pagination</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('badge')">
+                        <i class="la la-certificate a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Badge</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('lists')">
+                        <i class="la la-list a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Lists</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('widget')">
+                        <i class="la la-codepen a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Widget</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('widget_advanced')">
+                        <i class="la la-codepen a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Widget advanced</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('tables')">
+                        <i class="la la-table a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Tables</span>
+                    </a>
+                </li>
+                <!--
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('tabs')">
+                        <i class="la la-table a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Tabs</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('iconbox')">
+                        <i class="la la-table a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Iconbox</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('tabs')">
+                        <i class="la la-table a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Infobox</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('callout')">
+                        <i class="la la-table a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Callout</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('general')">
+                        <i class="la la-table a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">General</span>
+                    </a>
+                </li>-->
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('colors')">
+                        <i class="la la-paint-brush a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Colors</span>
+                    </a>
+                </li>
+                <li class="a-menu__item">
+                    <a class="a-menu__link" href="javascript:scrollTo('typography')">
+                        <i class="la la-font a-menu__link-icon"></i>
+                        <span class="a-menu__link-text">Typography</span>
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+    
+    </div>
+    <div class="container-fluid">
+        <div style="padding-left:250px">
     <section style="max-width:840px; margin: 0 auto;">
         <h3>Navs</h3>
-        <div class="a-widget">
+        <div class="a-widget" id="navs">
             <div class="a-widget__heading">Grid navs</div>
             <div class="a-widget__body">
                 <div class="a-widget__section a-widget__section--border">
@@ -103,7 +213,7 @@
             </div>
         </div>
         <h3>Accordions</h3>
-        <div class="a-widget">
+        <div class="a-widget" id="accordion">
             <div class="a-widget__heading">Accordion basic</div>
             <div class="a-widget__body">
                 <div class="a-widget__section">
@@ -161,7 +271,7 @@
             </div>
         </div>
         <h3>Pagination</h3>
-        <div class="a-widget">
+        <div class="a-widget" id="pagination">
             <div class="a-widget__heading">Pagination</div>
             <div class="a-widget__body" style="flex-direction: row; flex-wrap: wrap;">
                 <ul class="a-pager-nav">
@@ -177,7 +287,7 @@
             </div>
         </div>
         <h3>Badge</h3>
-        <div class="a-widget">
+        <div class="a-widget" id="badge">
             <div class="a-widget__heading">Basic badge</div>
             <div class="a-widget__body" style="flex-direction: row; flex-wrap: wrap;">
                 <span class="a-badge a-badge-primary">1</span>&nbsp;
@@ -222,34 +332,112 @@
             </div>
         </div>
         <h3>Lists</h3>
-        <div class="a-widget">
+        <div class="a-widget" id="lists">
             <div class="a-widget__heading">Notification</div>
-            <div class="a-widget__body" style="flex-direction: row; flex-wrap: wrap;">
+            <div class="a-widget__body" style="flex-direction: column;">
                 <div class="a-notification">
-                    <div class="a-notification__item">
+                    <a class="a-notification__item" href="javascript:void(0)">
                         <div class="a-notification__item-icon">
-                            <i class="la la-sign-out"></i>
+                            <i class="la la-line-chart a-success"></i>
                         </div>
-                    </div>
-                    <div class="a-notification__item-details">
-                        <div class="a-notification__item-title">
-                            Hello world
+                        <div class="a-notification__item-details">
+                            <div class="a-notification__item-title">
+                                Ended meeting
+                            </div>
+                            <div class="a-notification__item-time">
+                                2 minutes ago.
+                            </div>
                         </div>
-                        <div class="a-notification__item-time">
-                            4 minutes ago.
+                        <i class="la la-angle-right a-notification-toggle"></i>
+                    </a>
+                    <a class="a-notification__item" href="javascript:void(0)">
+                        <div class="a-notification__item-icon">
+                            <i class="la la-cloud-download a-primary"></i>
                         </div>
-                    </div>
+                        <div class="a-notification__item-details">
+                            <div class="a-notification__item-title">
+                                Added minute
+                            </div>
+                            <div class="a-notification__item-time">
+                                4 minutes ago.
+                            </div>
+                        </div>
+                        <i class="la la-angle-right a-notification-toggle"></i>
+                    </a>
+                    <a class="a-notification__item" href="javascript:void(0)">
+                        <div class="a-notification__item-icon">
+                            <i class="la la-music a-danger"></i>
+                        </div>
+                        <div class="a-notification__item-details">
+                            <div class="a-notification__item-title">
+                                Raised issue
+                            </div>
+                            <div class="a-notification__item-time">
+                                7 minutes ago.
+                            </div>
+                        </div>
+                        <i class="la la-angle-right a-notification-toggle"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <h3>Portlet</h3>
-        <h3>Portlet advanced</h3>
-        <h3>Tables</h3>
-        <h3>Tabs</h3>
-        <h3>Iconbox</h3>
-        <h3>Infobox</h3>
-        <h3>Callout</h3>
         <div class="a-widget">
+            <div class="a-widget__heading">Notification slim</div>
+            <div class="a-widget__body" style="flex-direction: column;">
+                <div class="a-notification a-notification--slim">
+                    <a class="a-notification__item" href="javascript:void(0)">
+                        <div class="a-notification__item-icon">
+                            <i class="la la-line-chart a-success"></i>
+                        </div>
+                        <div class="a-notification__item-details">
+                            <div class="a-notification__item-title">
+                                Ended meeting
+                            </div>
+                            <div class="a-notification__item-time">
+                                2 minutes ago.
+                            </div>
+                        </div>
+                        <i class="la la-angle-right a-notification-toggle"></i>
+                    </a>
+                    <a class="a-notification__item" href="javascript:void(0)">
+                        <div class="a-notification__item-icon">
+                            <i class="la la-cloud-download a-primary"></i>
+                        </div>
+                        <div class="a-notification__item-details">
+                            <div class="a-notification__item-title">
+                                Added minute
+                            </div>
+                            <div class="a-notification__item-time">
+                                4 minutes ago.
+                            </div>
+                        </div>
+                        <i class="la la-angle-right a-notification-toggle"></i>
+                    </a>
+                    <a class="a-notification__item" href="javascript:void(0)">
+                        <div class="a-notification__item-icon">
+                            <i class="la la-music a-danger"></i>
+                        </div>
+                        <div class="a-notification__item-details">
+                            <div class="a-notification__item-title">
+                                Raised issue
+                            </div>
+                            <div class="a-notification__item-time">
+                                7 minutes ago.
+                            </div>
+                        </div>
+                        <i class="la la-angle-right a-notification-toggle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 id="widget">Widget</h3>
+        <h3 id="widget_advanced">Widget advanced</h3>
+        <h3 id="tables">Tables</h3>
+        <h3 id="tabs">Tabs</h3>
+        <h3 id="iconbox">Iconbox</h3>
+        <h3 id="infobox">Infobox</h3>
+        <h3>Callout</h3>
+        <div class="a-widget" id="callout">
             <div class="a-widget__heading">Callout</div>
             <div class="a-widget__body" style="flex-direction: row; flex-wrap: wrap;">
                 <div class="a-callout a-callout--diagonal-bg" style="border:1px solid #e2e2e2;">
@@ -265,9 +453,9 @@
                 </div>
             </div>
         </div>
-        <h3>General</h3>
+        <h3 id="general">General</h3>
         <h3>Colors</h3>
-        <div class="a-widget">
+        <div class="a-widget" id="colors">
             <div class="a-widget__heading">Colors</div>
             <div class="a-widget__body" style="flex-direction: row; flex-wrap: wrap;">
                 <div style="width: 33.33333%">
@@ -300,7 +488,7 @@
             </div>
         </div>
         <h3>Typography</h3>
-        <div class="a-widget">
+        <div class="a-widget" id="typography">
             <div class="a-widget__heading">Headings</div>
             <div class="a-widget__body" style="flex-direction: row; flex-wrap: wrap;">
                 <div style="width: 50%">
@@ -322,5 +510,14 @@
             </div>
         </div>
     </section>
+    </div>
+    </div>
+    <script>
+        function scrollTo(id) {
+            console.log("scrolling");
+            var elmnt = document.getElementById(id);
+            elmnt.scrollIntoView({ behavior: 'smooth', block: 'end'});
+        }
+    </script>
 </body>
 </html>
